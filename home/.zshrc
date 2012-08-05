@@ -5,7 +5,7 @@ if [[ -d $HOME/.oh-my-zsh ]]; then
 
   # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
   # Example format: plugins=(rails git textmate ruby lighthouse)
-  plugins=(git ruby rails autojump rbenv gem grails)
+  plugins=(git ruby rails autojump rbenv gem mvn)
 
   export ZSH_THEME="simple"
 
@@ -57,7 +57,7 @@ export NODE_PATH=/usr/local/lib/jsctags/:$NODE_PATH
 cdpath=($HOME/repos $HOME/repos/client_portal)
 
 # Boost the maven memory, useful for when running  jetty
-export MAVEN_OPTS="-Xmx512m -XX:MaxPermSize=256m"
+export MAVEN_OPTS="-Xmx1512m -XX:MaxPermSize=1256m -Xss4m -Xss5024k"
 
 # Little markdown helper
 function mdown () {
