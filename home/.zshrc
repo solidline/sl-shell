@@ -17,13 +17,9 @@ fi
 # yadr=`find -L ~ -type file -maxdepth 2 -name .yadr | head | sed 's:\.yadr\/::'`
 
 # Configuration
-source $HOME/.secrets
 source $HOME/.zsh/aliases
 source $HOME/.zsh/zsh_aliases
 source $HOME/.zsh/prompt
-
-# Things I don't want to publish to github
-[[ -s "$HOME/.secrets" ]] && source "$HOME/.secrets"
 
 # Vim mode
 bindkey -v
@@ -46,15 +42,14 @@ zstyle ':completion:*:match:*' original only
 zstyle ':completion:*:approximate:*' max-errors 1 numeric
 
 # Add path to our custom bins
-export PATH=/usr/local/bin:$PATH:$yadr/bin:$yadr/bin/yadr
-
+export PATH=/usr/local/bin:$PATH:~/.bin
 export NODE_PATH=/usr/local/lib/jsctags/:$NODE_PATH
 
 # rbenv
 [[ -d "$HOME/.rbenv" ]] && export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
 
 # Custom cdpaths
-cdpath=($HOME/repos $HOME/repos/client_portal)
+cdpath=($HOME/repos)
 
 # Boost the maven memory, useful for when running  jetty
 export MAVEN_OPTS="-Xmx1512m -XX:MaxPermSize=1256m -Xss4m -Xss5024k"
@@ -103,4 +98,4 @@ function mdown () {
     '; markdown $@) | bcat
 }
 
-source "`brew --prefix grc`/etc/grc.bashrc"
+# source "`brew --prefix grc`/etc/grc.bashrc"

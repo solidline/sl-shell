@@ -4,3 +4,6 @@
 [submodule "home/.oy-my-zsh"]
 	path = home/.oy-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
+[submodule "solarized"]
+	path = solarized
+	url = https://github.com/altercation/solarized.git
