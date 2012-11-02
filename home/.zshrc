@@ -5,7 +5,10 @@ if [[ -d $HOME/.oh-my-zsh ]]; then
 
   # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
   # Example format: plugins=(rails git textmate ruby lighthouse)
-  plugins=(git ruby rails autojump rbenv gem mvn)
+  plugins=(git ruby rails autojump rbenv gem mvn )
+  # plugins=(git ruby rails autojump rbenv gem mvn zsh-syntax-highlighting)
+
+  # ZSH_HIGHLIGHT_HIGHLIGHTERS=( main cursor)
 
   export ZSH_THEME="simple"
 
@@ -97,5 +100,11 @@ function mdown () {
         </head>
     '; markdown $@) | bcat
 }
+
+ww(){
+ local zip=91350
+ php -r '$xml = simplexml_load_file("http://api.wunderground.com/auto/wui/geo/ForecastXML/index.xml?query='${zip}'"); foreach($xml->txt_forecast->forecastday as $weather){ echo "{$weather->title}: "; echo $weather->fcttext; echo PHP_EOL . PHP_EOL;}' 
+}
+
 
 # source "`brew --prefix grc`/etc/grc.bashrc"
