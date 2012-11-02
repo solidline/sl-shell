@@ -5,7 +5,7 @@ if [[ -d $HOME/.oh-my-zsh ]]; then
 
   # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
   # Example format: plugins=(rails git textmate ruby lighthouse)
-  plugins=(git ruby rails autojump rbenv gem mvn )
+  plugins=(git ruby rails autojump gem mvn )
   # plugins=(git ruby rails autojump rbenv gem mvn zsh-syntax-highlighting)
 
   # ZSH_HIGHLIGHT_HIGHLIGHTERS=( main cursor)
@@ -47,9 +47,6 @@ zstyle ':completion:*:approximate:*' max-errors 1 numeric
 # Add path to our custom bins
 export PATH=/usr/local/bin:$PATH:~/.bin
 export NODE_PATH=/usr/local/lib/jsctags/:$NODE_PATH
-
-# rbenv
-[[ -d "$HOME/.rbenv" ]] && export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
 
 # Custom cdpaths
 cdpath=($HOME/repos)
