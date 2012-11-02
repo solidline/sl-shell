@@ -10,3 +10,9 @@
 [submodule "home/.oh-my-zsh"]
 	path = home/.oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
+[submodule "home/.rbenv"]
+	path = home/.rbenv
+	url = git://github.com/sstephenson/rbenv.git
+[submodule "home/.ruby-build"]
+	path = home/.ruby-build
+	url = git://github.com/sstephenson/ruby-build.git
