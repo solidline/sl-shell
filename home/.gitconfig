@@ -101,7 +101,7 @@
 [core]
   autocrlf = false
   editor = vim
-  excludesfile = ~/.dotfiles/gitignore_global
+  excludesfile = ~/.gitignore
 	whitespace = cr-at-eol
 [advice]
   statusHints = false
