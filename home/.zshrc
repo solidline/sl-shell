@@ -30,7 +30,7 @@ ZSH_THEME="garyblessington"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git gem mvn bundler rbenv zsh-syntax-highlighting  history-substring-search)
+plugins=(git gem mvn bundler rbenv zsh-syntax-highlighting  history-substring-search mouse)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -64,4 +64,4 @@ function zle-keymap-select {
     zle reset-prompt
 }
 zle -N zle-keymap-select
-set -o vi
+# set -o vi
