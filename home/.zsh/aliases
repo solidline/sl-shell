@@ -117,3 +117,11 @@ alias todo='open nvalt://find/todo'
 alias jp='python -mjson.tool | vim -'
 
 alias gg='gg'
+
+alias ji='jira -a getIssue --issue'
+
+alias jenkins='java -jar /usr/local/bin/jenkins-cli.jar -s http://jenkins1.mgmt.tools4.coresys.tmcs:8080/jenkins/'
+alias mvns='mvn tomcat6:run | grcat conf.mvn'
+
+alias vi='vim'
+alias v='vim'

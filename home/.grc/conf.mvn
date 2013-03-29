@@ -1,0 +1,20 @@
+# highlight info
+regexp=severity="DEBUG"
+colours=blue
+count=once
+======
+regexp=severity="WARN "
+colours=yellow
+count=once
+======
+regexp=severity="ERROR"
+colours=red
+count=once
+======
+regexp=severity=INFO\: Starting
+colours=green
+count=once
+
+
+
+

@@ -6,7 +6,7 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 # ZSH_THEME="robbyrussell"
-ZSH_THEME="garyblessington"
+ZSH_THEME="sammy"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -38,6 +38,8 @@ source $ZSH/oh-my-zsh.sh
 
 source $HOME/.zsh/aliases
 source $HOME/.zsh/zsh_aliases
+source $HOME/.zsh/zsh_aliases
+source $HOME/Dropbox/shell/private
 
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
@@ -45,17 +47,20 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 # local bin
 export PATH=/usr/local/bin:$PATH:~/.bin
 
+# Splunk
+export PATH=$PATH:/usr/local/bin/splunk/bin
+
+# tmux
+export PATH=$PATH:/Users/tadsanden/.homesick/repos/sl-shell/tmux-mem-cpu-load
+
 # custom cdpaths
 cdpath=($HOME/repos)
 
 # boost the maven memory, useful for when running  jetty
-export MAVEN_OPTS="-Duser.timezone=UTC -Xmx1512m -XX:MaxPermSize=1256m -Xss4m -Xss5024k"
+# -Xmx512m
+# export MAVEN_OPTS="-Duser.timezone=UTC -Xmx1512m -XX:MaxPermSize=1256m -Xss4m -Xss5024k"
+export MAVEN_OPTS="-Duser.timezone=UTC -Xmx2268m -XX:MaxPermSize=1256m -Xss4m -Xss5024k"
 
-# grab the weather
-ww(){
- local zip=91350
- php -r '$xml = simplexml_load_file("http://api.wunderground.com/auto/wui/geo/ForecastXML/index.xml?query='${zip}'"); foreach($xml->txt_forecast->forecastday as $weather){ echo "{$weather->title}: "; echo $weather->fcttext; echo PHP_EOL . PHP_EOL;}' 
-}
 
 # variable to display which mode you are in.
 VIMODE=">> "
@@ -64,4 +69,8 @@ function zle-keymap-select {
     zle reset-prompt
 }
 zle -N zle-keymap-select
-# set -o vi
+
+
+
+# used for tmux-powerline
+PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'

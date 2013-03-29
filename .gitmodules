@@ -16,3 +16,15 @@
 [submodule "home/.ruby-build"]
 	path = home/.ruby-build
 	url = git://github.com/sstephenson/ruby-build.git
+[submodule "powerline-fonts"]
+	path = powerline-fonts
+	url = https://github.com/Lokaltog/powerline-fonts
+[submodule "tmux-powerline"]
+	path = tmux-powerline
+	url = https://github.com/erikw/tmux-powerline
+[submodule "tmux-mem-cpu-load"]
+	path = tmux-mem-cpu-load
+	url = https://github.com/thewtex/tmux-mem-cpu-load.git
+[submodule "rainbarf"]
+	path = rainbarf
+	url = https://github.com/creaktive/rainbarf.git
