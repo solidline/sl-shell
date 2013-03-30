@@ -28,3 +28,6 @@
 [submodule "rainbarf"]
 	path = rainbarf
 	url = https://github.com/creaktive/rainbarf.git
+[submodule "sourceCodePro-Powerline"]
+	path = sourceCodePro-Powerline
+	url = https://github.com/ryanmcilmoyl/sourceCodePro-Powerline.git
