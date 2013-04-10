@@ -15,3 +15,13 @@ alias -g G='| grep' # now you can do: ls foo G something
 # usage: fn foo 
 # to find all files containing 'foo' in the name
 function fn() { ls **/*$1* }
+
+
+# All of a sudden, you can write something like “mmv *.dat *.dat_old” or “mmv foo.* bar.*” into a newly opened terminal 
+# and it will do as you expect! You can even invoke “mmv **/*2008.mp3 **/*2009.mp3” 
+# and all matching files residing in any subdirectory are renamed according to the pattern as well.
+alias mmv='noglob zmv -W'
+
+function todo() {
+  git commit --allow-empty -m "TODO: $*"
+}

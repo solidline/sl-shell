@@ -31,3 +31,6 @@
 [submodule "sourceCodePro-Powerline"]
 	path = sourceCodePro-Powerline
 	url = https://github.com/ryanmcilmoyl/sourceCodePro-Powerline.git
+[submodule "doctorjs"]
+	path = doctorjs
+	url = https://github.com/mozilla/doctorjs

@@ -30,14 +30,13 @@ ZSH_THEME="sorin"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git gem mvn bundler rbenv zsh-syntax-highlighting  history-substring-search mouse)
+plugins=(git gem mvn bundler rbenv zsh-syntax-highlighting  history-substring-search mouse tmux)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
 source $HOME/.zsh/aliases
-source $HOME/.zsh/zsh_aliases
 source $HOME/.zsh/zsh_aliases
 source $HOME/Dropbox/shell/private
 
@@ -74,3 +73,8 @@ zle -N zle-keymap-select
 
 # used for tmux-powerline
 PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
+
+autoload -U zmv
+
+# Needed for jsctags
+NODE_PATH='/usr/local/lib/jsctags:${NODE_PATH}'
