@@ -124,4 +124,6 @@ alias jenkins='java -jar /usr/local/bin/jenkins-cli.jar -s http://jenkins1.mgmt.
 alias mvns='mvn tomcat6:run | grcat conf.mvn'
 
 alias vi='vim'
-alias v='vim'
+
+##Launch Chrome with given URL from commandline
+alias url="open -a /Applications/Google\ Chrome.app"

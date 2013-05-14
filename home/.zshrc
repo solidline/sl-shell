@@ -30,7 +30,7 @@ ZSH_THEME="sorin"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git gem mvn bundler rbenv zsh-syntax-highlighting  history-substring-search mouse tmux)
+plugins=(git gem mvn bundler rbenv zsh-syntax-highlighting  history-substring-search mouse colorize)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -49,8 +49,15 @@ export PATH=/usr/local/bin:$PATH:~/.bin
 # Splunk
 export PATH=$PATH:/usr/local/bin/splunk/bin
 
+# npm bin
+export PATH=$PATH:/usr/local/share/npm/bin
+
 # tmux
 export PATH=$PATH:/Users/tadsanden/.homesick/repos/sl-shell/tmux-mem-cpu-load
+
+export EDITOR='vim'
+
+
 
 # custom cdpaths
 cdpath=($HOME/repos)
