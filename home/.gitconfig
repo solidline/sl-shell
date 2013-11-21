@@ -100,9 +100,9 @@
   default = tracking
 [core]
   autocrlf = false
-  editor = vim
   excludesfile = ~/.gitignore
 	whitespace = cr-at-eol
+	editor = /usr/local/bin/vim
 [advice]
   statusHints = false
 [diff]
@@ -112,7 +112,7 @@
 [rerere]
   # Remember my merges
   # http://gitfu.wordpress.com/2008/04/20/git-rerere-rereremember-what-you-did-last-time/
-  enabled = true
+	enabled = true
 [user]
 	name = Tad Sanden
 	email = tad.sanden@livenation.com

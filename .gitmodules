@@ -34,3 +34,12 @@
 [submodule "doctorjs"]
 	path = doctorjs
 	url = https://github.com/mozilla/doctorjs
+[submodule "iterm-2-colors"]
+	path = iterm-2-colors
+	url = https://github.com/baskerville/iTerm-2-Color-Themes.git
+[submodule "Smyck-Color-Scheme"]
+	path = Smyck-Color-Scheme
+	url = https://github.com/hukl/Smyck-Color-Scheme.git
+[submodule "cstags"]
+	path = cstags
+	url = https://github.com/mislav/cstags.git

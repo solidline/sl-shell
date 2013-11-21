@@ -40,6 +40,8 @@ source $HOME/.zsh/aliases
 source $HOME/.zsh/zsh_aliases
 source $HOME/Dropbox/shell/private
 
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 
@@ -55,7 +57,14 @@ export PATH=$PATH:/usr/local/share/npm/bin
 # tmux
 export PATH=$PATH:/Users/tadsanden/.homesick/repos/sl-shell/tmux-mem-cpu-load
 
+# python pip module
+# see http://nojhan.github.io/colout/ for examples on adding color to the terminal
+export PATH=$PATH:/usr/local/share/python
+
 export EDITOR='vim'
+
+# sbt
+export PATH=$PATH:/Users/tadsanden/code/sbt
 
 
 
@@ -66,6 +75,8 @@ cdpath=($HOME/repos)
 # -Xmx512m
 # export MAVEN_OPTS="-Duser.timezone=UTC -Xmx1512m -XX:MaxPermSize=1256m -Xss4m -Xss5024k"
 export MAVEN_OPTS="-Duser.timezone=UTC -Xmx2268m -XX:MaxPermSize=1256m -Xss4m -Xss5024k"
+
+export JAVA_HOME=$(/usr/libexec/java_home)
 
 
 # variable to display which mode you are in.
@@ -84,4 +95,8 @@ PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -
 autoload -U zmv
 
 # Needed for jsctags
-NODE_PATH='/usr/local/lib/jsctags:${NODE_PATH}'
+# NODE_PATH='/usr/local/share/npm'
+# NODE_PATH=/usr/local/lib/jsctags:$NODE_PATH
+#
+
+export TERM=xterm-256color
