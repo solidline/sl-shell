@@ -6,7 +6,9 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 # ZSH_THEME="robbyrussell"
-ZSH_THEME="sorin"
+# ZSH_THEME="zhann"
+# ZSH_THEME="jtriley"
+ZSH_THEME="miloshadzic"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -30,7 +32,29 @@ ZSH_THEME="sorin"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git gem mvn bundler rbenv zsh-syntax-highlighting  history-substring-search mouse colorize)
+plugins=(git mvn zsh-syntax-highlighting history-substring-search mouse colorize vi-mode osx common-aliases cp gitignore node rbenv)
+
+bindkey -M viins 'jj' vi-cmd-mode
+
+# sourcing the opp file, provides text-objects
+source ~/.homesick/repos/sl-shell/opp.zsh/opp.zsh
+source ~/.homesick/repos/sl-shell/opp.zsh/opp/*
+
+
+# Added key bindings for vi-mode
+bindkey '^P' up-history
+bindkey '^N' down-history
+
+# backspace and ^h working even after
+# returning from command mode
+bindkey '^?' backward-delete-char
+bindkey '^h' backward-delete-char
+
+# ctrl-w removed word backwards
+bindkey '^w' backward-kill-word
+
+# ctrl-r starts searching history backward
+bindkey '^r' history-incremental-search-backward
 
 source $ZSH/oh-my-zsh.sh
 
@@ -66,8 +90,6 @@ export EDITOR='vim'
 # sbt
 export PATH=$PATH:/Users/tadsanden/code/sbt
 
-
-
 # custom cdpaths
 cdpath=($HOME/repos)
 
@@ -78,19 +100,6 @@ export MAVEN_OPTS="-Duser.timezone=UTC -Xmx2268m -XX:MaxPermSize=1256m -Xss4m -X
 
 export JAVA_HOME=$(/usr/libexec/java_home)
 
-
-# variable to display which mode you are in.
-VIMODE=">> "
-function zle-keymap-select {
-    VIMODE=“${${KEYMAP/(main|viins)/>> }/(vicmd)/}${${KEYMAP/vicmd/<< }/(main|viins)/}”
-    zle reset-prompt
-}
-zle -N zle-keymap-select
-
-
-
-# used for tmux-powerline
-PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
 
 autoload -U zmv
 

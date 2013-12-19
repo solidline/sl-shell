@@ -43,3 +43,15 @@
 [submodule "cstags"]
 	path = cstags
 	url = https://github.com/mislav/cstags.git
+[submodule "iterm-vibrantinklion"]
+	path = iterm-vibrantinklion
+	url = https://github.com/asanghi/vibrantinklion.git
+[submodule "iterm-argonaut"]
+	path = iterm-argonaut
+	url = https://github.com/effkay/iTerm-argonaut.git
+[submodule "iterm-2-colors-more"]
+	path = iterm-2-colors-more
+	url = https://github.com/JamieMason/All-iTerm-Colors.git
+[submodule "opp.zsh"]
+	path = opp.zsh
+	url = https://github.com/hchbaw/opp.zsh.git
