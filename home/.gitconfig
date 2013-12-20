@@ -99,7 +99,7 @@
   autocrlf = false
   excludesfile = ~/.gitignore
 	whitespace = cr-at-eol
-	editor = /usr/bin/vim
+	editor = /usr/local/bin/vim
 [advice]
   statusHints = false
 [rerere]

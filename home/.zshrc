@@ -8,7 +8,8 @@ ZSH=$HOME/.oh-my-zsh
 # ZSH_THEME="robbyrussell"
 # ZSH_THEME="zhann"
 # ZSH_THEME="jtriley"
-ZSH_THEME="miloshadzic"
+# ZSH_THEME="miloshadzic"
+ZSH_THEME="wezm+"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -68,8 +69,7 @@ source $HOME/Dropbox/shell/private
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-
+eval "$(rbenv init -)"
 # local bin
 export PATH=/usr/local/bin:$PATH:~/.bin
 
