@@ -32,13 +32,14 @@ ZSH_THEME="miloshadzic"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git mvn zsh-syntax-highlighting history-substring-search mouse colorize vi-mode osx common-aliases cp gitignore node rbenv)
+plugins=(git mvn zsh-syntax-highlighting history-substring-search mouse colorize osx common-aliases cp gitignore node rbenv)
+# plugins=(git mvn zsh-syntax-highlighting history-substring-search mouse colorize vi-mode osx common-aliases cp gitignore node rbenv)
 
 bindkey -M viins 'jj' vi-cmd-mode
 
 # sourcing the opp file, provides text-objects
-source ~/.homesick/repos/sl-shell/opp.zsh/opp.zsh
-source ~/.homesick/repos/sl-shell/opp.zsh/opp/*
+# source ~/.homesick/repos/sl-shell/opp.zsh/opp.zsh
+# source ~/.homesick/repos/sl-shell/opp.zsh/opp/*
 
 
 # Added key bindings for vi-mode

@@ -16,8 +16,8 @@
 [submodule "home/.ruby-build"]
 	path = home/.ruby-build
 	url = git://github.com/sstephenson/ruby-build.git
-[submodule "powerline-fonts"]
-	path = powerline-fonts
+[submodule "themes/powerline-fonts"]
+	path = themes/powerline-fonts
 	url = https://github.com/Lokaltog/powerline-fonts
 [submodule "tmux-powerline"]
 	path = tmux-powerline
