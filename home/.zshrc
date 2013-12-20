@@ -79,9 +79,6 @@ export PATH=$PATH:/usr/local/bin/splunk/bin
 # npm bin
 export PATH=$PATH:/usr/local/share/npm/bin
 
-# tmux
-export PATH=$PATH:/Users/tadsanden/.homesick/repos/sl-shell/tmux-mem-cpu-load
-
 # python pip module
 # see http://nojhan.github.io/colout/ for examples on adding color to the terminal
 export PATH=$PATH:/usr/local/share/python
@@ -111,13 +108,4 @@ autoload -U zmv
 
 export TERM=xterm-256color
 
-# TMUX
-if which tmux 2>&1 >/dev/null; then
-    # if no session is started, start a new session
-    test -z ${TMUX} && tmux
-
-    # when quitting tmux, try to attach
-    while test -z ${TMUX}; do
-        tmux attach || break
-    done
-fi
+if [ "$TMUX" = "" ]; then tmux; fi
