@@ -5,11 +5,8 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-# ZSH_THEME="robbyrussell"
-# ZSH_THEME="zhann"
-# ZSH_THEME="jtriley"
-# ZSH_THEME="miloshadzic"
-ZSH_THEME="wezm+"
+
+ZSH_THEME="kphoen"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -33,7 +30,7 @@ ZSH_THEME="wezm+"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git mvn zsh-syntax-highlighting history-substring-search mouse colorize osx common-aliases cp gitignore node rbenv)
+plugins=(mvn git zsh-syntax-highlighting history-substring-search mouse colorize osx common-aliases cp gitignore node rbenv brew autojump) 
 # plugins=(git mvn zsh-syntax-highlighting history-substring-search mouse colorize vi-mode osx common-aliases cp gitignore node rbenv)
 
 bindkey -M viins 'jj' vi-cmd-mode
@@ -66,7 +63,8 @@ source $HOME/.zsh/aliases
 source $HOME/.zsh/zsh_aliases
 source $HOME/Dropbox/shell/private
 
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /opt/boxen/env.sh
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # rbenv
 eval "$(rbenv init -)"
@@ -92,20 +90,23 @@ export PATH=$PATH:/Users/tadsanden/code/sbt
 cdpath=($HOME/repos)
 
 # boost the maven memory, useful for when running  jetty
-# -Xmx512m
-# export MAVEN_OPTS="-Duser.timezone=UTC -Xmx1512m -XX:MaxPermSize=1256m -Xss4m -Xss5024k"
 export MAVEN_OPTS="-Duser.timezone=UTC -Xmx2268m -XX:MaxPermSize=1256m -Xss4m -Xss5024k"
 
 export JAVA_HOME=$(/usr/libexec/java_home)
 
-
 autoload -U zmv
 
 # Needed for jsctags
-# NODE_PATH='/usr/local/share/npm'
-# NODE_PATH=/usr/local/lib/jsctags:$NODE_PATH
-#
+# NODE_PATH='/usr/local/lib/jsctags:${NODE_PATH}'
+# export NODE_PATH='/opt/boxen/nodenv/versions/v0.10.8/lib/node_modules'
+
+eval "$(nodenv init -)"
 
 export TERM=xterm-256color
 
-if [ "$TMUX" = "" ]; then tmux; fi
+# if [ "$TMUX" = "" ]; then tmux; fi
+
+highlight () {
+  perl -pe "s/$1/\e[1;31;43m$&\e[0m/g"
+}
+export DOCKER_HOST=tcp://localhost:4243

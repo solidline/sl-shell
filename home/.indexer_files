@@ -1,0 +1,4 @@
+[your-project-name]
+option:ctags_params="--language-force=javascript"
+
+~/repos

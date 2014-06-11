@@ -85,6 +85,7 @@
   svnl = svn log --oneline --show-commit
 	ctags = !.git/hooks/ctags
 	jsctags = !.git/hooks/jsctags
+	g = grep --break --heading --line-number
 [format]
   pretty = format:%C(blue)%ad%Creset %C(yellow)%h%C(green)%d%Creset %C(blue)%s %C(magenta) [%an]%Creset
 [apply]
@@ -97,9 +98,11 @@
   default = tracking
 [core]
   autocrlf = false
-  excludesfile = ~/.gitignore
+  excludesfile = /opt/boxen/config/git/gitignore
 	whitespace = cr-at-eol
-	editor = /usr/local/bin/vim
+	editor = /opt/boxen/homebrew/Cellar/macvim/7.4-73/MacVim.app/Contents/MacOS/Vim
+	pager = less -x4
+	quotepath = false
 [advice]
   statusHints = false
 [rerere]
@@ -120,5 +123,17 @@
 	trustExitCode = true
 [mergetool]
 	prompt = false
+
 [merge]
 	tool = Kaleidoscope
+  ff = false
+
+[credential]
+helper = /opt/boxen/bin/boxen-git-credential
+
+[hub]
+protocol = https
+[grep]
+	lineNumber = true
+[status]
+	short = 1

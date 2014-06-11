@@ -4,9 +4,6 @@
 [submodule "themes/base16-iterm2"]
 	path = themes/base16-term2
 	url = https://github.com/chriskempson/base16-iterm2.git
-[submodule "tomorrow-theme"]
-	path = tomorrow-theme
-	url = https://github.com/chriskempson/tomorrow-theme.git
 [submodule "home/.oh-my-zsh"]
 	path = home/.oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
@@ -55,3 +52,21 @@
 [submodule "opp.zsh"]
 	path = opp.zsh
 	url = https://github.com/hchbaw/opp.zsh.git
+[submodule "themes/seoul256-iTerm2"]
+	path = themes/seoul256-iTerm2
+	url = https://github.com/mikker/seoul256-iTerm2.git
+[submodule "tmux-colors-solarized"]
+	path = tmux-colors-solarized
+	url = git@github.com:seebi/tmux-colors-solarized.git
+[submodule "themes/tomorrow-theme"]
+	path = themes/tomorrow-theme
+	url = git@github.com:chriskempson/tomorrow-theme.git
+[submodule "themes/iTerm-argonaut"]
+	path = themes/iTerm-argonaut
+	url = https://github.com/effkay/iTerm-argonaut
+[submodule "themes/iTerm-twilight"]
+	path = themes/iTerm-twilight
+	url = https://gist.github.com/1183140.git
+[submodule "themes/iTerm-2-Color-Themes"]
+	path = themes/iTerm-2-Color-Themes
+	url = git@github.com:baskerville/iTerm-2-Color-Themes.git
