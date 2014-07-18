@@ -30,8 +30,9 @@ ZSH_THEME="kphoen"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(mvn git zsh-syntax-highlighting history-substring-search mouse colorize osx common-aliases cp gitignore node rbenv brew autojump) 
+# plugins=(mvn git git-extras zsh-syntax-highlighting history-substring-search mouse colorize osx common-aliases cp gitignore node rbenv brew autojump) 
 # plugins=(git mvn zsh-syntax-highlighting history-substring-search mouse colorize vi-mode osx common-aliases cp gitignore node rbenv)
+plugins=(zsh-syntax-highlighting mouse rbenv autojump)
 
 bindkey -M viins 'jj' vi-cmd-mode
 
@@ -66,6 +67,8 @@ source $HOME/Dropbox/shell/private
 source /opt/boxen/env.sh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+. $HOME/.bin/z/z.sh
+
 # rbenv
 eval "$(rbenv init -)"
 # local bin
@@ -73,9 +76,6 @@ export PATH=/usr/local/bin:$PATH:~/.bin
 
 # Splunk
 export PATH=$PATH:/usr/local/bin/splunk/bin
-
-# npm bin
-export PATH=$PATH:/usr/local/share/npm/bin
 
 # python pip module
 # see http://nojhan.github.io/colout/ for examples on adding color to the terminal
@@ -96,12 +96,6 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 
 autoload -U zmv
 
-# Needed for jsctags
-# NODE_PATH='/usr/local/lib/jsctags:${NODE_PATH}'
-# export NODE_PATH='/opt/boxen/nodenv/versions/v0.10.8/lib/node_modules'
-
-eval "$(nodenv init -)"
-
 export TERM=xterm-256color
 
 # if [ "$TMUX" = "" ]; then tmux; fi
@@ -110,3 +104,5 @@ highlight () {
   perl -pe "s/$1/\e[1;31;43m$&\e[0m/g"
 }
 export DOCKER_HOST=tcp://localhost:4243
+
+`brew --prefix`/etc/profile.d/z.sh

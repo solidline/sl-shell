@@ -133,3 +133,4 @@ alias vi='/opt/boxen/homebrew/Cellar/macvim/7.4-73/MacVim.app/Contents/MacOS/Vim
 alias url="open -a /Applications/Google\ Chrome.app"
 
 alias e="exit"
+alias tat="tmux new -s `basename $PWD`"
