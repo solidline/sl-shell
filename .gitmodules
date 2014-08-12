@@ -70,6 +70,3 @@
 [submodule "home/.bin/z"]
 	path = home/.bin/z
 	url = https://github.com/rupa/z.git
-[submodule "home/.zprezto"]
-	path = home/.zprezto
-	url = https://github.com/sorin-ionescu/prezto.git
