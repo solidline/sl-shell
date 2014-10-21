@@ -64,9 +64,9 @@
 [submodule "themes/iTerm-twilight"]
 	path = themes/iTerm-twilight
 	url = https://gist.github.com/1183140.git
-[submodule "themes/iTerm-2-Color-Themes"]
-	path = themes/iTerm-2-Color-Themes
-	url = git@github.com:baskerville/iTerm-2-Color-Themes.git
 [submodule "home/.bin/z"]
 	path = home/.bin/z
 	url = https://github.com/rupa/z.git
+[submodule "home/.zprezto"]
+	path = home/.zprezto
+	url = https://github.com/solidline/prezto.git
