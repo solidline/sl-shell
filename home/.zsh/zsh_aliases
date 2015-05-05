@@ -25,3 +25,8 @@ alias mmv='noglob zmv -W'
 function todo() {
   git commit --allow-empty -m "TODO: $*"
 }
+
+# Quicklook given file
+function ql () {
+  qlmanage -p $* 2>/dev/null
+}

@@ -123,15 +123,21 @@ alias ji='jira -a getIssue --issue'
 alias jenkins='java -jar /usr/local/bin/jenkins-cli.jar -s http://jenkins1.mgmt.tools4.coresys.tmcs:8080/jenkins/'
 alias mvns='mvn tomcat6:run | grcat conf.mvn'
 
-# alias vi='/Applications/MacVim.app/Contents/MacOS/Vim'
-# alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
+alias vi='vim'
+alias v='vim'
 
-alias vim='/opt/boxen/homebrew/Cellar/macvim/7.4-73/MacVim.app/Contents/MacOS/Vim'
-alias vimp='/opt/boxen/homebrew/Cellar/macvim/7.4-73/MacVim.app/Contents/MacOS/Vim -u NONE -N'
-alias vi='/opt/boxen/homebrew/Cellar/macvim/7.4-73/MacVim.app/Contents/MacOS/Vim'
+alias vu='vim -u NONE'
+
+alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
 
 ##Launch Chrome with given URL from commandline
 alias url="open -a /Applications/Google\ Chrome.app"
 
 alias e="exit"
 alias tat="tmux new -s `basename $PWD`"
+alias ibt="icalBuddy -n eventsToday | grep --color -E '^|^.*location'"
+
+# Docker
+alias b2du="boot2docker up"
+alias b2dd="boot2docker down"
+alias docv="docker version"

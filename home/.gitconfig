@@ -100,7 +100,7 @@
   autocrlf = false
   excludesfile = /opt/boxen/config/git/gitignore
 	whitespace = cr-at-eol
-	editor = /opt/boxen/homebrew/Cellar/macvim/7.4-73/MacVim.app/Contents/MacOS/Vim
+	editor = /Applications/MacVim.app/Contents/MacOS/Vim
 	pager = less -x4
 	quotepath = false
 [advice]
@@ -111,7 +111,7 @@
 	enabled = true
 [user]
 	name = Tad Sanden
-	email = tad.sanden@livenation.com
+	email = TadSanden@Livenation.com
 [difftool "Kaleidoscope"]
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [diff]
