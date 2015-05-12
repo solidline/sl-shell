@@ -97,7 +97,7 @@
   # the usual default is to push all branches
   default = tracking
 [core]
-  autocrlf = false
+	autocrlf = input
   excludesfile = /opt/boxen/config/git/gitignore
 	whitespace = cr-at-eol
 	editor = /Applications/MacVim.app/Contents/MacOS/Vim
