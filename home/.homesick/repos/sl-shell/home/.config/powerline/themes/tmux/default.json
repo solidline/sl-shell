@@ -2,6 +2,10 @@
 	"segments": {
 		"right": [
 			{
+				"function": "powerline.segments.common.players.spotify_apple_script",
+				"name": "player"
+			},
+			{
 				"function": "powerline.segments.common.sys.uptime",
 				"priority": 50
 			},
@@ -26,10 +30,6 @@
 					"unit": "F",
 					"location_query": "91350"
 				}
-			},
-			{
-			        "function": "powerline.segments.common.players.spotify_apple_script",
-			        "name": "player"
 			}
 		]
 	}
