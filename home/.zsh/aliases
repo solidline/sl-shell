@@ -123,8 +123,8 @@ alias ji='jira -a getIssue --issue'
 alias jenkins='java -jar /usr/local/bin/jenkins-cli.jar -s http://jenkins1.mgmt.tools4.coresys.tmcs:8080/jenkins/'
 alias mvns='mvn tomcat6:run | grcat conf.mvn'
 
-alias vi='vim'
-alias v='vim'
+alias vim='vim -w ~/.vimlog "$@"'
+alias vi='vim -w ~/.vimlog "$@"'
 
 alias vu='vim -u NONE'
 
