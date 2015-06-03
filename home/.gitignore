@@ -2,3 +2,7 @@
 Thumbs.db
 tags
 *.bts
+Icon*
+.sync
+*.iml
+*.idea
