@@ -40,7 +40,8 @@ alias zr='source ~/.zshrc'
 alias s='git status -s'
 alias gstsh='git stash'
 alias gst='git stash'
-alias gstp='git stash pop'
+alias gspp='git stash -p' # patch
+alias gsp='git stash pop'
 alias gsh='git show'
 alias gshw='git show'
 alias gshow='git show'
@@ -141,3 +142,7 @@ alias ibt="icalBuddy -n eventsToday | grep --color -E '^|^.*location'"
 alias b2du="boot2docker up"
 alias b2dd="boot2docker down"
 alias docv="docker version"
+
+alias java6='export JAVA_HOME=$(/usr/libexec/java_home -v 1.6);java -version'
+alias java7='export JAVA_HOME=$(/usr/libexec/java_home -v 1.7);java -version'
+alias java8='export JAVA_HOME=$(/usr/libexec/java_home -v 1.8);java -version'

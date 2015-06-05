@@ -98,7 +98,7 @@
   default = tracking
 [core]
 	autocrlf = input
-  excludesfile = /opt/boxen/config/git/gitignore
+	excludesfile = ~/.gitignore
 	whitespace = cr-at-eol
 	editor = /Applications/MacVim.app/Contents/MacOS/Vim
 	pager = less -x4
