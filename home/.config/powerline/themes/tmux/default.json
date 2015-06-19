@@ -1,0 +1,31 @@
+{
+	"segments": {
+		"right": [
+			{
+				"function": "powerline.segments.common.players.spotify_apple_script",
+				"name": "player"
+			},
+			{
+				"function": "powerline.segments.common.time.date"
+			},
+			{
+				"function": "powerline.segments.common.time.date",
+				"name": "time",
+				"args": {
+					"format": "%H:%M",
+					"istime": true
+				}
+			},
+			{
+				"function": "powerline.segments.common.wthr.weather",
+				"args": {
+					"unit": "F",
+					"location_query": "91350"
+				}
+			},
+			{
+				"function": "powerline.segments.common.vcs.branch"
+			}
+		]
+	}
+}
