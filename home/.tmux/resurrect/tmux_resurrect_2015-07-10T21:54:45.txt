@@ -1,0 +1,13 @@
+pane	2	1	:zsh	1	:*	0	:/Users/tad.sanden/.homesick/repos/sl-shell/home/.tmux/plugins	1	zsh	:
+pane	caui	1	:caui	1	:*	0	:/Users/tad.sanden/repos/caui-web-app	1	Vim	:/Applications/MacVim.app/Contents/MacOS/Vim -w /Users/tad.sanden/.vimlog .
+pane	caui	2	:zsh	0	:-	0	:/Users/tad.sanden/repos/shared-ui	1	zsh	:
+pane	hahahahahahahahah	1	:zsh	1	:*	0	:/Users/tad.sanden/repos/caui-web-app	1	zsh	:
+pane	shared-ui	1	:grunt serve	1	:*	0	:/Users/tad.sanden/repos/shared-ui	0	zsh	:
+pane	shared-ui	1	:grunt serve	1	:*	1	:/Users/tad.sanden/.homesick/repos/sl-shell/home/.tmux/plugins	0	Google	:/Applications/Google Chrome.app/Contents/MacOS/Google Chrome --allow-running-insecure-content --disable-web-security
+pane	shared-ui	1	:grunt serve	1	:*	2	:/Users/tad.sanden/repos/caui-web-app	1	java	:/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home/bin/java -Duser.timezone=UTC -XX:MaxPermSize=1G -Xss4m -Xss5024k -classpath /usr/local/Cellar/maven/3.2.5/libexec/boot/plexus-classworlds-2.5.2.jar -Dclassworlds.conf=/usr/local/Cellar/maven/3.2.5/libexec/bin/m2.conf -Dmaven.home=/usr/local/Cellar/maven/3.2.5/libexec org.codehaus.plexus.classworlds.launcher.Launcher tomcat7:run
+window	2	1	1	:*	b49f,208x51,0,0,2
+window	caui	1	1	:*	cbfe,103x48,0,0,1
+window	caui	2	0	:-	cc01,103x48,0,0,4
+window	hahahahahahahahah	1	1	:*	b49d,208x51,0,0,0
+window	shared-ui	1	1	:*	9565,103x48,0,0[103x24,0,0{63x24,0,0,5,39x24,64,0,7},103x23,0,25,6]
+state	caui	shared-ui

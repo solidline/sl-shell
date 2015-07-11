@@ -126,7 +126,7 @@
 
 [merge]
 	tool = vimdiff
-  ff = false
+	ff = false
 
 [hub]
 protocol = https
