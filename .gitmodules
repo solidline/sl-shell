@@ -76,3 +76,6 @@
 [submodule "powerline-fonts"]
 	path = powerline-fonts
 	url = https://github.com/Lokaltog/powerline-fonts.git
+[submodule "home/.tmux/plugins/tpm"]
+	path = home/.tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm
