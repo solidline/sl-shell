@@ -6,3 +6,4 @@ Icon*
 .sync
 *.iml
 *.idea
+home/.tmux/resurrect/*
