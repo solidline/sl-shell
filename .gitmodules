@@ -79,3 +79,6 @@
 [submodule "home/.tmux/plugins/tpm"]
 	path = home/.tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
+[submodule "omnifocus-perspective-icons"]
+	path = omnifocus-perspective-icons
+	url = git@github.com:deaghean/omnifocus-perspective-icons.git

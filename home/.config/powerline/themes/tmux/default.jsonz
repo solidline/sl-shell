@@ -2,10 +2,6 @@
 	"segments": {
 		"right": [
 			{
-				"function": "powerline.segments.common.players.spotify_apple_script",
-				"name": "player"
-			},
-			{
 				"function": "powerline.segments.common.time.date"
 			},
 			{
