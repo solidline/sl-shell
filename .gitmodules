@@ -79,3 +79,6 @@
 [submodule "home/.tmux/plugins/tpm"]
 	path = home/.tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
+[submodule "fonts/Hack"]
+	path = fonts/Hack
+	url = https://github.com/chrissimpkins/Hack
