@@ -1,2 +1,3 @@
 .DS_Store
 home/.tmux/resurrect/**
+home/.tmux/resurrect/last
