@@ -82,3 +82,6 @@
 [submodule "omnifocus-perspective-icons"]
 	path = omnifocus-perspective-icons
 	url = git@github.com:deaghean/omnifocus-perspective-icons.git
+[submodule "fonts/Hack"]
+	path = fonts/Hack
+	url = https://github.com/chrissimpkins/Hack
