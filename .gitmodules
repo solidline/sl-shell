@@ -85,3 +85,6 @@
 [submodule "fonts/Hack"]
 	path = fonts/Hack
 	url = https://github.com/chrissimpkins/Hack
+[submodule "pure"]
+	path = pure
+	url = git@github.com:sindresorhus/pure.git

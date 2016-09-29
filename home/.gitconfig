@@ -104,8 +104,8 @@
 	autocrlf = input
 	excludesfile = ~/.gitignore
 	whitespace = cr-at-eol
-	editor = /Applications/MacVim.app/Contents/MacOS/Vim
-	pager = less -x4
+	editor = nvim
+	pager = diff-highlight | diff-so-fancy | less --tabs=1,5 -R
 	quotepath = false
 [advice]
   statusHints = false
@@ -115,11 +115,11 @@
 	enabled = true
 [user]
 	name = Tad Sanden
-	email = TadSanden@Livenation.com
+	email = tad.sanden@ticketmaster.com
 [difftool "Kaleidoscope"]
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [diff]
-	tool = vimdiff
+	tool = nvim
 [difftool]
 	prompt = false
 [mergetool "Kaleidoscope"]
@@ -129,7 +129,8 @@
 	prompt = false
 
 [merge]
-	tool = vimdiff
+	tool = nvim
+	ff = false
 	ff = false
 
 [hub]
@@ -138,3 +139,5 @@ protocol = https
 	lineNumber = true
 [status]
 	short = 1
+[gui]
+	recentrepo = /Users/tad.sanden/repos/caui-web-app

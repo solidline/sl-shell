@@ -1,3 +1,6 @@
 .DS_Store
 home/.tmux/resurrect/**
 home/.tmux/resurrect/last
+home/.config/configstore/update-notifier-bower.yml
+home/.config/configstore/insight-bower.json
+home/.tmux/plugins/**

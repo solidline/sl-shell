@@ -75,6 +75,7 @@ alias gpub='grb publish'
 alias gtr='grb track'
 alias gpl='git pull'
 alias gplr='git pull --rebase'
+alias gplf='git pull --ff-only'
 alias gps='git push'
 alias gpsh='git push'
 alias gnb='git nb' # new branch aka checkout -b
@@ -129,7 +130,7 @@ alias vi='vim -w ~/.vimlog "$@"'
 
 alias vu='vim -u NONE'
 
-alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
+# alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
 
 ##Launch Chrome with given URL from commandline
 alias url="open -a /Applications/Google\ Chrome.app"
@@ -146,3 +147,7 @@ alias docv="docker version"
 alias java6='export JAVA_HOME=$(/usr/libexec/java_home -v 1.6);java -version'
 alias java7='export JAVA_HOME=$(/usr/libexec/java_home -v 1.7);java -version'
 alias java8='export JAVA_HOME=$(/usr/libexec/java_home -v 1.8);java -version'
+
+alias npmi="npm install"
+alias v="nvim"
+alias nr="NVIM_LISTEN_ADDRESS=/tmp/nvimsocket nvim"
