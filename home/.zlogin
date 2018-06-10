@@ -1,1 +1,1 @@
-/Users/tadsanden/.homesick/repos/sl-shell/home/.zprezto/runcoms/zlogin
+./.zprezto/runcoms/zlogin

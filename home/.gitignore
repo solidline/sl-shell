@@ -1,6 +1,8 @@
 .DS_Store
 Thumbs.db
 tags
+tags.lock
+tags.temp
 *.bts
 Icon*
 .sync

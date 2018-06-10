@@ -85,3 +85,9 @@
 [submodule "pure"]
 	path = pure
 	url = git@github.com:sindresorhus/pure.git
+[submodule "intellij-colors-solarized"]
+	path = intellij-colors-solarized
+	url = git@github.com:jkaving/intellij-colors-solarized.git
+[submodule "base16-idea"]
+	path = base16-idea
+	url = git@github.com:adilosa/base16-idea.git

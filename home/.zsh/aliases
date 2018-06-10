@@ -151,3 +151,4 @@ alias java8='export JAVA_HOME=$(/usr/libexec/java_home -v 1.8);java -version'
 alias npmi="npm install"
 alias v="nvim"
 alias nr="NVIM_LISTEN_ADDRESS=/tmp/nvimsocket nvim"
+alias ds="docker run -it --rm -p 8888:8888 -v /Users/tsanden/jupyter:/home/jovyan/work tad/datascience-notebook"

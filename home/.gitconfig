@@ -12,6 +12,7 @@
   old = red bold
   new = green bold
 [alias]
+  git = !exec git
   # add
   a = add                           # add
   chunkyadd = add --patch           # stage commits chunk by chunk
@@ -104,7 +105,7 @@
 	autocrlf = input
 	excludesfile = ~/.gitignore
 	whitespace = cr-at-eol
-	editor = nvim
+	editor = vim
 	pager = diff-highlight | diff-so-fancy | less --tabs=1,5 -R
 	quotepath = false
 [advice]
@@ -115,11 +116,11 @@
 	enabled = true
 [user]
 	name = Tad Sanden
-	email = tad.sanden@ticketmaster.com
+	email = tad.sanden@experianinteractive.com
 [difftool "Kaleidoscope"]
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [diff]
-	tool = nvim
+	tool = vim
 [difftool]
 	prompt = false
 [mergetool "Kaleidoscope"]
@@ -129,7 +130,7 @@
 	prompt = false
 
 [merge]
-	tool = nvim
+	tool = vim
 	ff = false
 	ff = false
 
