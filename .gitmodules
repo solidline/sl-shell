@@ -7,9 +7,6 @@
 [submodule "home/.ruby-build"]
 	path = home/.ruby-build
 	url = git://github.com/sstephenson/ruby-build.git
-[submodule "themes/powerline-fonts"]
-	path = themes/powerline-fonts
-	url = https://github.com/Lokaltog/powerline-fonts
 [submodule "tmux-powerline"]
 	path = tmux-powerline
 	url = https://github.com/erikw/tmux-powerline
@@ -22,9 +19,6 @@
 [submodule "sourceCodePro-Powerline"]
 	path = sourceCodePro-Powerline
 	url = https://github.com/ryanmcilmoyl/sourceCodePro-Powerline.git
-[submodule "doctorjs"]
-	path = doctorjs
-	url = https://github.com/mozilla/doctorjs
 [submodule "iterm-2-colors"]
 	path = iterm-2-colors
 	url = https://github.com/baskerville/iTerm-2-Color-Themes.git
@@ -43,30 +37,15 @@
 [submodule "opp.zsh"]
 	path = opp.zsh
 	url = https://github.com/hchbaw/opp.zsh.git
-[submodule "themes/seoul256-iTerm2"]
-	path = themes/seoul256-iTerm2
-	url = https://github.com/mikker/seoul256-iTerm2.git
 [submodule "tmux-colors-solarized"]
 	path = tmux-colors-solarized
 	url = git@github.com:seebi/tmux-colors-solarized.git
-[submodule "themes/tomorrow-theme"]
-	path = themes/tomorrow-theme
-	url = git@github.com:chriskempson/tomorrow-theme.git
-[submodule "themes/iTerm-argonaut"]
-	path = themes/iTerm-argonaut
-	url = https://github.com/effkay/iTerm-argonaut
-[submodule "themes/iTerm-twilight"]
-	path = themes/iTerm-twilight
-	url = https://gist.github.com/1183140.git
 [submodule "home/.bin/z"]
 	path = home/.bin/z
 	url = https://github.com/rupa/z.git
 [submodule "home/.zprezto"]
 	path = home/.zprezto
 	url = https://github.com/solidline/prezto.git
-[submodule "themes/iTerm2-Color-Schemes"]
-	path = themes/iTerm2-Color-Schemes
-	url = https://github.com/mbadolato/iTerm2-Color-Schemes.git
 [submodule "base16-shell"]
 	path = base16-shell
 	url = https://github.com/chriskempson/base16-shell.git
