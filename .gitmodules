@@ -3,10 +3,10 @@
 	url = https://github.com/altercation/solarized.git
 [submodule "home/.rbenv"]
 	path = home/.rbenv
-	url = git://github.com/sstephenson/rbenv.git
+	url = https://github.com/sstephenson/rbenv.git
 [submodule "home/.ruby-build"]
 	path = home/.ruby-build
-	url = git://github.com/sstephenson/ruby-build.git
+	url = https://github.com/sstephenson/ruby-build.git
 [submodule "tmux-powerline"]
 	path = tmux-powerline
 	url = https://github.com/erikw/tmux-powerline
@@ -39,7 +39,7 @@
 	url = https://github.com/hchbaw/opp.zsh.git
 [submodule "tmux-colors-solarized"]
 	path = tmux-colors-solarized
-	url = git@github.com:seebi/tmux-colors-solarized.git
+	url = https://github.com/seebi/tmux-colors-solarized.git
 [submodule "home/.bin/z"]
 	path = home/.bin/z
 	url = https://github.com/rupa/z.git
@@ -54,16 +54,16 @@
 	url = https://github.com/Lokaltog/powerline-fonts.git
 [submodule "omnifocus-perspective-icons"]
 	path = omnifocus-perspective-icons
-	url = git@github.com:deaghean/omnifocus-perspective-icons.git
+	url = https://github.com/deaghean/omnifocus-perspective-icons.git
 [submodule "fonts/Hack"]
 	path = fonts/Hack
 	url = https://github.com/chrissimpkins/Hack
 [submodule "pure"]
 	path = pure
-	url = git@github.com:sindresorhus/pure.git
+	url = https://github.com/sindresorhus/pure.git
 [submodule "intellij-colors-solarized"]
 	path = intellij-colors-solarized
-	url = git@github.com:jkaving/intellij-colors-solarized.git
+	url = https://github.com/jkaving/intellij-colors-solarized.git
 [submodule "base16-idea"]
 	path = base16-idea
-	url = git@github.com:adilosa/base16-idea.git
+	url = https://github.com/adilosa/base16-idea.git
