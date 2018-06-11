@@ -1,4 +1,0 @@
-pane	0	1	:zsh	1	:*	0	:/Users/tad.sanden/repos/shared-ui	1	zsh	:
-pane	0	1	:zsh	1	:*	1	:/Users/tad.sanden/repos/caui-web-app	0	zsh	:
-window	0	1	1	:*	365e,208x51,0,0{104x51,0,0,1,103x51,105,0,2}
-state	0	0
