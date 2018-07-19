@@ -67,3 +67,6 @@
 [submodule "base16-idea"]
 	path = base16-idea
 	url = https://github.com/adilosa/base16-idea.git
+[submodule "home/.tmux/plugins/tpm"]
+	path = home/.tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm
