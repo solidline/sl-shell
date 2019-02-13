@@ -1,0 +1,10 @@
+{
+	"optOut": false,
+	"lastUpdateCheck": 1536098407638,
+	"update": {
+		"latest": "1.15.3",
+		"current": "1.7.1",
+		"type": "minor",
+		"name": "prisma"
+	}
+}
