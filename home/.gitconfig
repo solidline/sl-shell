@@ -105,9 +105,23 @@
 	autocrlf = input
 	excludesfile = ~/.gitignore
 	whitespace = cr-at-eol
-	editor = vim
-	pager = diff-highlight | diff-so-fancy | less --tabs=1,5 -R
+	editor = nvim
+	pager = delta
 	quotepath = false
+
+[interactive]
+  diffFilter = delta --color-only
+
+[delta]
+  features = side-by-side line-numbers decorations
+  whitespace-error-style = 22 reverse
+  syntax-theme = Sublime Snazzy
+
+[delta "decorations"]
+  commit-decoration-style = bold yellow box ul
+  file-style = bold yellow box ul
+  file-decoration-style = none
+
 [advice]
   statusHints = false
 [rerere]
@@ -116,16 +130,12 @@
 	enabled = true
 [user]
 	name = Tad Sanden
-	email = tad.sanden@experianinteractive.com
-[difftool "Kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+	email = tad.sanden@experian.com
 [diff]
 	tool = vim
+
 [difftool]
 	prompt = false
-[mergetool "Kaleidoscope"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-	trustExitCode = true
 [mergetool]
 	prompt = false
 
@@ -133,6 +143,7 @@
 	tool = vim
 	ff = false
 	ff = false
+	conflictstyle = diff3
 
 [hub]
 protocol = https
