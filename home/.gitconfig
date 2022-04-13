@@ -136,14 +136,6 @@
 
 [difftool]
 	prompt = false
-[mergetool]
-	prompt = false
-
-[merge]
-	tool = vim
-	ff = false
-	ff = false
-	conflictstyle = diff3
 
 [hub]
 protocol = https
@@ -153,3 +145,13 @@ protocol = https
 	short = 1
 [gui]
 	recentrepo = /Users/tad.sanden/repos/caui-web-app
+
+# define command which will be used when "nvim" is set as a merge tool
+[mergetool "nvim"]
+  cmd = nvim -f -c \"Gdiffsplit!\" \"$MERGED\"
+# set "nvim" as tool for merging
+[merge]
+  tool = nvim
+# automatically launch merge tool without displaying a prompt
+[mergetool]
+  prompt = false

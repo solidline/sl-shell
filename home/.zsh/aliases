@@ -1,12 +1,5 @@
 # Aliases in this file are bash and zsh compatible
 
-# Don't change. The following determines where YADR is installed.
-yadr=`find -L ~ -type file -maxdepth 2 -name .yadr | head | sed 's:\.yadr\/::'`
-
-# YADR support
-alias yav='yadr vim-add-plugin'
-alias yuv='yadr vim-update-plugins'
-alias yip='yadr init-plugins'
 
 # PS
 alias psg="ps aux | grep "
@@ -134,21 +127,13 @@ alias url="open -a /Applications/Google\ Chrome.app"
 
 alias e="exit"
 alias tat="tmux new -s `basename $PWD`"
-alias ibt="icalBuddy -n eventsToday | grep --color -E '^|^.*location'"
+alias fzfp='fzf --preview="bat --style=numbers --color=always --line-range :500 {}"'
+alias fzf='fzf -m --bind ctrl-a:select-all'
 
-# Docker
-alias b2du="boot2docker up"
-alias b2dd="boot2docker down"
-alias docv="docker version"
 
-alias java6='export JAVA_HOME=$(/usr/libexec/java_home -v 1.6);java -version'
-alias java7='export JAVA_HOME=$(/usr/libexec/java_home -v 1.7);java -version'
-alias java8='export JAVA_HOME=$(/usr/libexec/java_home -v 1.8);java -version'
-
-alias npmi="npm install"
 alias v="vim"
 alias vm="vim -c 'set syntax=markdown'"
-alias ds="docker run -it --rm -p 8888:8888 -v /Users/tsanden/jupyter:/home/jovyan/work tad/datascience-notebook"
 
 alias archivebox="docker-compose run archivebox"
 alias f=floaterm
+alias dark=base16_ashes
