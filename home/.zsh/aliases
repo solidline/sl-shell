@@ -91,31 +91,10 @@ alias ps='ps aux'
 # Zippin
 alias gz='tar -zcvf'
 
-# Ruby
-alias c='script/console --irb=pry'
-alias ms='mongrel_rails start'
-
-# Vim/ctags "mctags = make ctags", using the ruby specific version
-# to save some time
-alias mctags=~/.bin/run_tags.rb #'/opt/local/bin/ctags -Rf ./tags *'
-
 alias ka9='killall -9'
 alias k9='kill -9'
 
-# Gem install
-alias sgi='sudo gem install --no-ri --no-rdoc'
-
-# TODOS
-# This uses NValt (NotationalVelocity alt fork) - http://brettterpstra.com/project/nvalt/
-# to find the note called 'todo'
-alias todo='open nvalt://find/todo'
-
-alias jp='python -mjson.tool | vim -'
-
 alias ji='jira -a getIssue --issue'
-
-alias jenkins='java -jar /usr/local/bin/jenkins-cli.jar -s http://jenkins1.mgmt.tools4.coresys.tmcs:8080/jenkins/'
-alias mvns='mvn tomcat6:run | grcat conf.mvn'
 
 alias vim='nvim -w ~/.vimlog "$@"'
 alias vi='nvim -w ~/.vimlog "$@"'
@@ -130,10 +109,13 @@ alias tat="tmux new -s `basename $PWD`"
 alias fzfp='fzf --preview="bat --style=numbers --color=always --line-range :500 {}"'
 alias fzf='fzf -m --bind ctrl-a:select-all'
 
-
 alias v="vim"
 alias vm="vim -c 'set syntax=markdown'"
 
 alias archivebox="docker-compose run archivebox"
 alias f=floaterm
 alias dark=base16_ashes
+
+alias prettyjson='python -m json.tool'
+alias v=nvim
+alias cat='bat --theme=base16'

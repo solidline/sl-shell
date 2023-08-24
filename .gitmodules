@@ -73,3 +73,6 @@
 [submodule "frangipanni"]
 	path = frangipanni
 	url = https://github.com/birchb1024/frangipanni.git
+[submodule "resh"]
+	path = resh
+	url = https://github.com/curusarn/resh.git
