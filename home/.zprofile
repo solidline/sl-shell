@@ -62,5 +62,5 @@ if (( $#commands[(i)lesspipe(|.sh)] )); then
   export LESSOPEN="| /usr/bin/env $commands[(i)lesspipe(|.sh)] %s 2>&-"
 fi
 
-. $HOME/.asdf/asdf.sh
-. $HOME/.asdf/plugins/java/set-java-home.zsh
+export PATH="/opt/homebrew/bin:/opt/homebrew/opt/openssl/bin:$PATH"
+eval $(/opt/homebrew/bin/brew shellenv)
